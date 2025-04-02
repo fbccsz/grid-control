@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-pag.css">
+    <script src="java-lay.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Painel de Controle</h1>
+            <button class="settings-btn">Configurações</button>
+        </header>
+
+        <div class="dashboard">
+            <!-- Widget de Vendas -->
+            <div class="widget vendas">
+                <h3>Vendas do Mês</h3>
+                <div class="content">
+                    <p><strong>R$ 20,000</strong> em vendas</p>
+                    <p>+15% em relação ao mês passado</p>
+                </div>
+            </div>
+
+            <!-- Widget de Usuários Ativos -->
+            <div class="widget usuarios">
+                <h3>Usuários Ativos</h3>
+                <div class="content">
+                    <p><strong>1,200</strong> usuários ativos</p>
+                    <p>+8% em relação à última semana</p>
+                </div>
+            </div>
+
+            <!-- Widget de Tarefas -->
+            <div class="widget tarefas">
+                <h3>Tarefas Pendentes</h3>
+                <ul>
+                    <li>Revisar relatório financeiro</li>
+                    <li>Atualizar site</li>
+                    <li>Responder e-mails</li>
+                </ul>
+            </div>
+
+            <!-- Widget de Gráfico de Vendas -->
+            <div class="widget grafico">
+                <h3>Gráfico de Vendas</h3>
+                <canvas id="salesChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

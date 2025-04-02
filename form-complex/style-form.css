@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Usando Grid para o layout */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    gap: 20px;
+    padding: 20px;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-group label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form input[type="checkbox"] {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+}
+
+form .buttons {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 12px 25px;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+}
