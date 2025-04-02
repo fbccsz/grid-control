@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Complexa - Layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-lay.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <div class="logo">Grid</div>
+            <nav class="navbar">
+                <a href="#">Dashboard</a>
+                <a href="#">Relatórios</a>
+                <a href="#">Configurações</a>
+            </nav>
+        </header>
+
+        <!-- Layout Principal com Menu Lateral e Conteúdo -->
+        <div class="main-layout">
+            <!-- Menu Lateral -->
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="#">Painel de Controle</a></li>
+                    <li><a href="#">Usuários</a></li>
+                    <li><a href="#">Configurações</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </aside>
+
+            <!-- Conteúdo Principal -->
+            <main class="content">
+                <section class="section">
+                    <h2>Visão Geral</h2>
+                    <p>Algumas informações importantes sobre o sistema...</p>
+                </section>
+
+                <section class="section">
+                    <h2>Gráficos de Performance</h2>
+                    <div class="chart-container">
+                        <canvas id="chart1"></canvas>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Usuários Recentes</h2>
+                    <table>
+                        <tr><th>Nome</th><th>Status</th></tr>
+                        <tr><td>Ana Souza</td><td>Ativa</td></tr>
+                        <tr><td>João Oliveira</td><td>Inativo</td></tr>
+                        <tr><td>Maria Santos</td><td>Ativa</td></tr>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h2>Últimas Tarefas</h2>
+                    <ul>
+                        <li>Atualizar sistema</li>
+                        <li>Revisar relatórios financeiros</li>
+                        <li>Responder e-mails</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
